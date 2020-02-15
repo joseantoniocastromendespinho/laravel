@@ -14,3 +14,9 @@
 
 
 Route::resource('/', 'CursoController');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/autenticado', 'Autenticado@index')->name('Autenticado');
+Route::get('/autenticado/test1', 'Autenticado@test1')->name('Test1');
